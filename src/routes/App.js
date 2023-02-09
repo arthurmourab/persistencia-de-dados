@@ -20,7 +20,7 @@ em vacinas intervalo tem a ver com periodicidade, exemplo, 10 dias
 
   const [vaccines, setVaccines] = useState([
     {
-      title: "Vacina Pfizer",
+      title: "Vacina Pfizer teste",
       description: "Novas vacinas 2023",
       doses: 200,
       frequency: 1,
