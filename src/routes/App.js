@@ -10,6 +10,14 @@ import AgendaItem from "../components/items/AgendaItem";
 
 function App() {
   
+/* 
+TO-DOs
+em agenda, colocar status Agendado, Cancelado e Realizado
+em agenda agenda tem que ser possível selecionar um usuário
+em vacinas pode ter periodicidade por dia, semanas, meses e anos
+em vacinas intervalo tem a ver com periodicidade, exemplo, 10 dias
+*/
+
   const [vaccines, setVaccines] = useState([
     {
       title: "Vacina Pfizer",
