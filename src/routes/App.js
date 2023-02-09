@@ -1,6 +1,7 @@
 import "./App.css";
 import Button from "../components/buttons/Button";
 import React, { useState, useEffect } from "react";
+import VaccineDialog from "../components/dialogs/VaccineDialog";
 
 function App() {
   
@@ -65,8 +66,15 @@ function App() {
               width={32}
               fontSize={20}
               buttonMargin="16px 0px 0px 8px"
-              onClick={() => toggleModal("vaccines")}
+              onClick={() => toggleModal("vaccine")}
             />
+            {isVaccineModalOpen ? (
+              <VaccineDialog
+                isOpen={isVaccineModalOpen}
+                onCancel={() => toggleModal("vaccine")}
+                onSuccessCallback={() => onAddedItem("vaccine")}
+              />
+            ) : null}
           </div>
           <div className="vaccines-container"></div>
         </div>
