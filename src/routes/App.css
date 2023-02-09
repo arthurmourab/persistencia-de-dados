@@ -1,0 +1,25 @@
+.app {
+  text-align: left;
+}
+
+.app-header {
+  background-color: #282c34;
+  display: flex;
+  padding-left: 16px;
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  color: white;
+}
+
+.sections-container {
+  padding-left: 16px;
+}
+
+.section-actions{
+  display: flex;
+}
+
+.item-container {
+  background-color: red;
+}
+
