@@ -40,7 +40,7 @@ const VaccineDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
         <div className="dialog-body">
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 8px 0px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Título:
               </p>
             </div>
@@ -55,7 +55,7 @@ const VaccineDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
           </div>
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 16px 0px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Descrição:
               </p>
             </div>
@@ -70,7 +70,7 @@ const VaccineDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
           </div>
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Doses:
               </p>
             </div>
@@ -84,7 +84,7 @@ const VaccineDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
           </div>
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Periodicidade:
               </p>
             </div>
@@ -98,7 +98,7 @@ const VaccineDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
           </div>
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Intervalo:
               </p>
             </div>

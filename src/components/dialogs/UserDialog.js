@@ -89,7 +89,7 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
         <div className="dialog-body">
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 8px 0px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Nome:
               </p>
             </div>
@@ -104,7 +104,7 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
           </div>
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 16px 0px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Data de nascimento:
               </p>
             </div>
@@ -119,7 +119,7 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
           </div>
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Selecione o sexo:
               </p>
             </div>
@@ -140,7 +140,7 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
           </div>
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Endereço:
               </p>
             </div>
@@ -158,7 +158,7 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
               style={{ display: "flex", marginRight: "8px" }}
             >
               <div style={{ margin: "auto 4px auto 0px" }}>
-                <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+                <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                   Número:
                 </p>
               </div>
@@ -172,7 +172,7 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
             </div>
             <div className="input-row" style={{ display: "flex" }}>
               <div style={{ margin: "auto 4px auto 0px" }}>
-                <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+                <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                   Setor:
                 </p>
               </div>
@@ -191,7 +191,7 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
               style={{ display: "flex", marginRight: "8px" }}
             >
               <div style={{ margin: "auto 4px auto 0px" }}>
-                <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+                <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                   Estado:
                 </p>
               </div>
@@ -205,7 +205,7 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
             </div>
             <div className="input-row" style={{ display: "flex" }}>
               <div style={{ margin: "auto 4px auto 0px" }}>
-                <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+                <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                   Cidade:
                 </p>
               </div>
@@ -220,7 +220,7 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
           </div>
           <div className="input-row">
               <div style={{ margin: "auto 0px" }}>
-                <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+                <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                   Alergias:
                 </p>
               </div>

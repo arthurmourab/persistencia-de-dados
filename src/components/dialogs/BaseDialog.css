@@ -42,6 +42,7 @@
   
   .dialog-body {
     width: 100%;
+    margin-bottom: 16px;
   }
   
   .dialog-footer {

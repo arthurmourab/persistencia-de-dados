@@ -40,7 +40,7 @@ const AgendaDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
         <div className="dialog-body">
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 8px 0px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Data:
               </p>
             </div>
@@ -55,7 +55,7 @@ const AgendaDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
           </div>
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 16px 0px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Hora:
               </p>
             </div>
@@ -70,7 +70,7 @@ const AgendaDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
           </div>
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Situação:
               </p>
             </div>
@@ -85,7 +85,7 @@ const AgendaDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
           </div>
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Data da situação:
               </p>
             </div>
@@ -100,7 +100,7 @@ const AgendaDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
           </div>
           <div className="input-row">
             <div style={{ margin: "auto 0px" }}>
-              <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+              <p className="body" style={{ margin: "0px 0px 4px 0px" }}>
                 Observações:
               </p>
             </div>
@@ -113,7 +113,8 @@ const AgendaDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
               onChange={handleInputChange}
             />
           </div>
-          <div className="dialog-footer">
+        </div>
+        <div className="dialog-footer">
             <Button
               label="Salvar"
               onClick={() => handleSubmit(newAgenda)}
@@ -121,7 +122,6 @@ const AgendaDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
             />
             <Button label="Cancelar" isDestructive onClick={onCancel} />
           </div>
-        </div>
       </div>
     </div>
   ) : null;

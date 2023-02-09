@@ -58,7 +58,6 @@ function App() {
             <h4 className="section-header">Vacinas</h4>
             <Button
               label="+"
-              labelMargin="-20px"
               width={32}
               fontSize={20}
               buttonMargin="16px 0px 0px 8px"
@@ -87,7 +86,6 @@ function App() {
             <h4 className="section-header">Agendas</h4>
             <Button
               label="+"
-              labelMargin="-20px"
               width={32}
               fontSize={20}
               buttonMargin="16px 0px 0px 8px"
@@ -116,7 +114,6 @@ function App() {
             <h4 className="section-header">Usuários</h4>
             <Button
               label="+"
-              labelMargin="-20px"
               width={32}
               fontSize={20}
               buttonMargin="16px 0px 0px 8px"

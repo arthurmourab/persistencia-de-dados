@@ -5,7 +5,9 @@
 .app-header {
   background-color: #282c34;
   display: flex;
+  padding-top: 6px;
   padding-left: 16px;
+  padding-bottom: 8px;
   font-size: calc(10px + 2vmin);
   font-weight: bold;
   color: white;
