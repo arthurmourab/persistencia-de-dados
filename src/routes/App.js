@@ -1,10 +1,11 @@
 import "./App.css";
 import Button from "../components/buttons/Button";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import VaccineDialog from "../components/dialogs/VaccineDialog";
 import UserDialog from "../components/dialogs/UserDialog";
 import AgendaDialog from "../components/dialogs/AgendaDialog";
 import VaccineItem from "../components/items/VaccineItem";
+import UserItem from "../components/items/UserItem";
 
 function App() {
   
@@ -120,7 +121,15 @@ function App() {
               />
             ) : null}
           </div>
-          <div className="users-container"></div>
+          <div className="users-container">
+          {users.map((item, index) => {
+              return (
+                <div style={{margin: "auto 16px auto 0px"}}>
+                  <UserItem key={index} item={item} />
+                </div>
+              )
+            })}
+          </div>
         </div>
       </div>
     </div>
