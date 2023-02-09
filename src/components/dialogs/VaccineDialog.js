@@ -4,7 +4,6 @@ import Button from "../buttons/Button";
 import InputField from "../inputs/InputField";
 
 const VaccineDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
-
   //#region UseState and Variables
   const [newVaccine, setNewVaccine] = useState({
     title: "",
