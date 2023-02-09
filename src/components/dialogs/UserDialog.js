@@ -9,7 +9,7 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
     name: "",
     birthDate: "",
     sex: "",
-    adress: "",
+    address: "",
     number: undefined,
     sector: "",
     city: "",
@@ -147,8 +147,8 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
             <InputField
               inputStyle={{ width: "200px" }}
               placeholder="Preencha o endereço"
-              name="adress"
-              value={newUser.adress}
+              name="address"
+              value={newUser.address}
               onChange={handleInputChange}
             />
           </div>
