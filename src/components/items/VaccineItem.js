@@ -23,7 +23,7 @@ const VaccineItem = ({ item }) => {
                 <p className="body" style={{ marginBottom: "4px" }}>
                     Doses
                 </p>
-                <p className="body" style={{ fontSize: 12}}>
+                <p className="metadata" style={{ fontSize: 12}}>
                     {item.doses}
                 </p>
             </div>
@@ -31,7 +31,7 @@ const VaccineItem = ({ item }) => {
                 <p className="body" style={{ marginBottom: "4px" }}>
                     Periodicidade
                 </p>
-                <p className="body" style={{ fontSize: 12}}>
+                <p className="metadata" style={{ fontSize: 12}}>
                     {item.frequency}
                 </p>
             </div>
@@ -39,7 +39,7 @@ const VaccineItem = ({ item }) => {
                 <p className="body" style={{ marginBottom: "4px" }}>
                     Intervalo
                 </p>
-                <p className="body" style={{ fontSize: 12}}>
+                <p className="metadata" style={{ fontSize: 12}}>
                     {item.gap}
                 </p>
             </div>
