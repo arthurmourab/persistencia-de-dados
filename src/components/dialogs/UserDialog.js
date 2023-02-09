@@ -14,6 +14,17 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
     sector: "",
     city: "",
     uf: "",
+    allergies : [
+      {
+        text: ""
+      },
+      {
+        text: ""
+      },
+      {
+        text: ""
+      }
+    ]
   });
 
   const sexOptions = [
@@ -45,6 +56,18 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
 
   const handleInputChange = (e) => {
     setNewUser({ ...newUser, [e.target.name]: e.target.value });
+  };
+
+  const handleAllergyInputChange = (index, e) => {
+    setNewUser({
+      ...newUser,
+      allergies: newUser.allergies.map((item, itemIndex) => {
+        if (itemIndex === index) {
+          item.text = e.target.value;
+        }
+        return item;
+      }),
+    });
   };
 
   const postUser = (value) => {
@@ -194,6 +217,35 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
                 onChange={handleInputChange}
               />
             </div>
+          </div>
+          <div className="input-row">
+              <div style={{ margin: "auto 0px" }}>
+                <p className="body" style={{ margin: "0px 1px 4px 0px" }}>
+                  Alergias:
+                </p>
+              </div>
+              <div className="item-row-children">
+                {newUser.allergies.map((item, index) => {
+                  return (
+                    <div className="item-row-child" key={index}>
+                      <div style={{ margin: "auto 0px", display: "flex" }}>
+                        <p className="body" style={{ margin: "0px 8px 0px 8px", fontSize: 12 }}>
+                          Alergia {index + 1}
+                        </p>
+                          <InputField
+                            name="text"
+                            value={item.text}
+                            placeholder="Preencha o campo"
+                            inputStyle={{ width: "200px" }}
+                            onChange={(e) => {
+                              handleAllergyInputChange(index, e);
+                            }}
+                          />
+                       </div> 
+                    </div>
+                  )
+                })}
+              </div>
           </div>
         </div>
         <div className="dialog-footer">
