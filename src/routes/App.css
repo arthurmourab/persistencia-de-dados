@@ -13,8 +13,14 @@
   color: white;
 }
 
+
 .sections-container {
   padding-left: 16px;
+}
+
+.section-item {
+  border-top: gray 1px solid;
+  margin-bottom: 16px;
 }
 
 .section-actions{
