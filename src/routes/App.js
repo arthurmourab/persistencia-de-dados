@@ -3,6 +3,7 @@ import Button from "../components/buttons/Button";
 import React, { useState, useEffect } from "react";
 import VaccineDialog from "../components/dialogs/VaccineDialog";
 import UserDialog from "../components/dialogs/UserDialog";
+import AgendaDialog from "../components/dialogs/AgendaDialog";
 
 function App() {
   
@@ -81,6 +82,13 @@ function App() {
               buttonMargin="16px 0px 0px 8px"
               onClick={() => toggleModal("agenda")}
             />
+            {isAgendaModalOpen ? (
+              <AgendaDialog
+                isOpen={isAgendaModalOpen}
+                onCancel={() => toggleModal("agenda")}
+                onSuccessCallback={() => onAddedItem("agenda")}
+              />
+            ) : null}
           </div>
           <div className="agendas-container"></div>
         </div>
