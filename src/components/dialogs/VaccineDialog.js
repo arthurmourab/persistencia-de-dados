@@ -50,7 +50,7 @@ const VaccineDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
               value={newVaccine.title}
               inputStyle={{ width: "200px" }}
               inputLength={60}
-              placeholder="Título"
+              placeholder="Preencha o título"
               onChange={handleInputChange}
             />
           </div>
