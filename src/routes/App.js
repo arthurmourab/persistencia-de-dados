@@ -2,6 +2,7 @@ import "./App.css";
 import Button from "../components/buttons/Button";
 import React, { useState, useEffect } from "react";
 import VaccineDialog from "../components/dialogs/VaccineDialog";
+import UserDialog from "../components/dialogs/UserDialog";
 
 function App() {
   
@@ -103,6 +104,13 @@ function App() {
               buttonMargin="16px 0px 0px 8px"
               onClick={() => toggleModal("user")}
             />
+            {isUserModalOpen ? (
+              <UserDialog
+                isOpen={isUserModalOpen}
+                onCancel={() => toggleModal("user")}
+                onSuccessCallback={() => onAddedItem("user")}
+              />
+            ) : null}
           </div>
           <div className="users-container"></div>
         </div>
