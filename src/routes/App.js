@@ -6,6 +6,7 @@ import UserDialog from "../components/dialogs/UserDialog";
 import AgendaDialog from "../components/dialogs/AgendaDialog";
 import VaccineItem from "../components/items/VaccineItem";
 import UserItem from "../components/items/UserItem";
+import AgendaItem from "../components/items/AgendaItem";
 
 function App() {
   
@@ -100,7 +101,15 @@ function App() {
               />
             ) : null}
           </div>
-          <div className="agendas-container"></div>
+          <div className="agendas-container">
+          {agendas.map((item, index) => {
+              return (
+                <div style={{margin: "auto 16px auto 0px"}}>
+                  <AgendaItem key={index} item={item} />
+                </div>
+              )
+            })}
+          </div>
         </div>
         <div className="section-item">
           <div className="section-actions">
