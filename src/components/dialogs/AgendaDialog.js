@@ -10,7 +10,7 @@ const AgendaDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
     time: "",
     situation: "",
     dateSituation: "",
-    observations: undefined,
+    observations: "",
   });
 
   //#endregion
