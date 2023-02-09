@@ -10,9 +10,47 @@ import AgendaItem from "../components/items/AgendaItem";
 
 function App() {
   
-  const [vaccines, setVaccines] = useState([]);
-  const [agendas, setAgendas] = useState([]);
-  const [users, setUsers] = useState([]);
+  const [vaccines, setVaccines] = useState([
+    {
+      title: "Vacina Pfizer",
+      description: "Novas vacinas 2023",
+      doses: 200,
+      frequency: 1,
+      gap: 10,
+    }
+  ]);
+  const [agendas, setAgendas] = useState([
+    {
+      date: "20/02/2022",
+      time: "18:00",
+      situation: "Reservado",
+      dateSituation: "10:00",
+      observations: "Vacina está reservada.",
+    }
+  ]);
+  const [users, setUsers] = useState([ 
+    {
+      name: "Teste",
+      birthDate: "20/02/2022",
+      sex: "M",
+      address: "Teste",
+      number: 2,
+      sector: "Teste",
+      city: "Goiania",
+      uf: "GO",
+      allergies : [
+        {
+          text: "teste"
+        },
+        {
+          text: "teste"
+        },
+        {
+          text: "teste"
+        }
+      ]
+    }
+   ]);
 
   const [isVaccineModalOpen, setIsVaccinesModalOpen] = useState(false);
   const [isAgendaModalOpen, setIsAgendaModalOpen] = useState(false);
@@ -71,7 +109,7 @@ function App() {
               />
             ) : null}
           </div>
-          <div className="vaccines-container">
+          <div className="section-children">
             {vaccines.map((item, index) => {
               return (
                 <div style={{margin: "auto 16px auto 0px"}}>
@@ -99,7 +137,7 @@ function App() {
               />
             ) : null}
           </div>
-          <div className="agendas-container">
+          <div className="section-children">
           {agendas.map((item, index) => {
               return (
                 <div style={{margin: "auto 16px auto 0px"}}>
@@ -127,7 +165,7 @@ function App() {
               />
             ) : null}
           </div>
-          <div className="users-container">
+          <div className="section-children">
           {users.map((item, index) => {
               return (
                 <div style={{margin: "auto 16px auto 0px"}}>
