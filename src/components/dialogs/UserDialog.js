@@ -48,12 +48,12 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
     setNewUser({ ...newUser, [e.target.name]: e.target.value });
   };
 
-  const postQuestion = (value) => {
+  const postUser = (value) => {
     onSuccessCallback(value);
   };
 
   const handleSubmit = (state) => {
-    postQuestion(state);
+    postUser(state);
   };
 
   //#endregion
@@ -90,7 +90,7 @@ const UserDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
               name="birthDate"
               value={newUser.birthDate}
               placeholder="Preencha a data"
-              inputLength={200}
+              inputLength={10}
               inputStyle={{ width: "200px" }}
               onChange={handleInputChange}
             />

@@ -22,12 +22,12 @@ const VaccineDialog = ({ isOpen, onCancel, onSuccessCallback }) => {
     setNewVaccine({ ...newVaccine, [e.target.name]: e.target.value });
   };
 
-  const postQuestion = (value) => {
+  const postVaccine = (value) => {
     onSuccessCallback(value);
   };
 
   const handleSubmit = (state) => {
-    postQuestion(state);
+    postVaccine(state);
   };
 
   //#endregion
