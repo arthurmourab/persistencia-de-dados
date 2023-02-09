@@ -8,34 +8,33 @@ const VaccineItem = ({ item }) => {
           className="subheader"
           style={{ fontWeight: "550", marginRight: "4px" }}
         >
-          {item.title})
+          {item.title}
         </p>
-        <p className="subheader">{item.description}</p>
+        <div style={{ display: "block", marginTop: "8px" }}>
+            <p className="body-medium" style={{ marginBottom: "4px" }}>
+             Descrição
+            </p>
+            <p className="body">
+              {item.description}
+            </p>
+          </div>
       </div>
       <div className="item-content-body">
-        <div style={{display: "flex", marginTop: "16px"}}>
-            <div style={{display: "block", marginLeft: "8px" }}>
-                <p className="body" style={{ marginBottom: "4px" }}>
+        <div style={{display: "flex", marginTop: "8px"}}>
+            <div style={{display: "block", marginRight: "16px" }}>
+                <p className="body-medium" style={{ marginBottom: "4px" }}>
                     Doses
                 </p>
-                <p className="metadata" style={{ fontSize: 12}}>
+                <p className="body">
                     {item.doses}
                 </p>
             </div>
-            <div style={{display: "block", marginLeft: "8px" }}>
-                <p className="body" style={{ marginBottom: "4px" }}>
-                    Periodicidade
-                </p>
-                <p className="metadata" style={{ fontSize: 12}}>
-                    {item.frequency}
-                </p>
-            </div>
             <div style={{display: "block" }}>
-                <p className="body" style={{ marginBottom: "4px" }}>
+                <p className="body-medium" style={{ marginBottom: "4px" }}>
                     Intervalo
                 </p>
-                <p className="metadata" style={{ fontSize: 12}}>
-                    {item.gap}
+                <p className="body">
+                    {item.gap} dias
                 </p>
             </div>
         </div>
