@@ -10,27 +10,26 @@ const UserItem = ({ item }) => {
         >
           {item.name})
         </p>
-        <p className="subheader">{item.title}</p>
-      </div>
-      <div className="item-content-body">
         <div style={{ display: "flex" }}>
           <div style={{ display: "block", marginRight: "8px" }}>
-            <p className="body" style={{ marginBottom: "4px" }}>
+            <p className="subheader" style={{ marginBottom: "4px" }}>
               Data de nascimento
             </p>
-            <p className="metadata" style={{ fontSize: 12 }}>
+            <p className="body" style={{ fontSize: 12 }}>
               {item.birthData}
             </p>
           </div>
           <div style={{ display: "block" }}>
-            <p className="body" style={{ marginBottom: "4px" }}>
+            <p className="subheader" style={{ marginBottom: "4px" }}>
               Sexo
             </p>
-            <p className="metadata" style={{ fontSize: 12 }}>
+            <p className="body" style={{ fontSize: 12 }}>
               {item.sex}
             </p>
           </div>
         </div>
+      </div>
+      <div className="item-content-body">
         <div style={{ display: "flex" }}>
           <div style={{ display: "block", marginRight: "8px" }}>
             <p className="body" style={{ marginBottom: "4px" }}>

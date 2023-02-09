@@ -10,14 +10,9 @@ const VaccineItem = ({ item }) => {
         >
           {item.title})
         </p>
-        <p className="subheader">{item.title}</p>
+        <p className="subheader">{item.description}</p>
       </div>
       <div className="item-content-body">
-        <div>
-          <p className="body" style={{ margin: "0px 0px 8px 0px" }}>
-            {item.description}
-          </p>
-        </div>
         <div style={{display: "flex", marginTop: "16px"}}>
             <div style={{display: "block", marginLeft: "8px" }}>
                 <p className="body" style={{ marginBottom: "4px" }}>
