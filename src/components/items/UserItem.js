@@ -2,7 +2,7 @@ import "./BaseItem.css";
 
 const UserItem = ({ item }) => {
   return (
-    <div className="item-container" style={{width: "200px"}}>
+    <div className="item-container">
       <div className="item-content-header">
         <p
           className="subheader"
