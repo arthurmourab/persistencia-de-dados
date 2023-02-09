@@ -1,0 +1,30 @@
+.item-container {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: white;
+    margin-right: 16px;
+    width: 200px;
+}
+
+.item-content-header {
+    display: flex;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.item-content-body {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.item-answers-list {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.item-content-footer {
+    margin: auto 0px auto auto;
+    display: flex;
+}
+

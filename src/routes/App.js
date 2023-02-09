@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import VaccineDialog from "../components/dialogs/VaccineDialog";
 import UserDialog from "../components/dialogs/UserDialog";
 import AgendaDialog from "../components/dialogs/AgendaDialog";
+import VaccineItem from "../components/items/VaccineItem";
 
 function App() {
   
@@ -69,7 +70,15 @@ function App() {
               />
             ) : null}
           </div>
-          <div className="vaccines-container"></div>
+          <div className="vaccines-container">
+            {vaccines.map((item, index) => {
+              return (
+                <div style={{margin: "auto 16px auto 0px"}}>
+                  <VaccineItem key={index} item={item} />
+                </div>
+              )
+            })}
+          </div>
         </div>
         <div className="section-item">
           <div className="section-actions">
