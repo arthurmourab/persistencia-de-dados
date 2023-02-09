@@ -30,6 +30,11 @@
     display: block;
     margin-bottom: 8px;
   }
+
+  .flex-input-row {
+    display: flex;
+    height: 30px;
+  }
   
   .answer-row {
     display: flex;
