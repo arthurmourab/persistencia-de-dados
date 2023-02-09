@@ -4,13 +4,11 @@
     padding: 8px;
     background-color: white;
     margin-right: 16px;
-    width: 200px;
 }
 
 .item-content-header {
-    display: flex;
     text-align: left;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .item-content-body {
@@ -20,7 +18,7 @@
 
 .item-children-list {
     margin-top: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .item-content-footer {
