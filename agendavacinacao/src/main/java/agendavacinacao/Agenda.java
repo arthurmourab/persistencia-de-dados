@@ -15,16 +15,19 @@ public class Agenda {
     private Date data;
     
     @Column(name = "hora")
-    private Date hora;
+    private String hora;
     
     @Column(name = "situacao")
-    private char situacao;
+    private String situacao;
     
     @Column(name = "data_situacao") 
     private Date data_situacao;
     
     @Column(name = "observacoes")
     private String observacoes;
+    
+    @Column(name = "vacina_id")
+    private int vacina_id;
 
     public int getId() {
         return id;
@@ -42,19 +45,19 @@ public class Agenda {
         this.data = data;
     }
 
-    public Date getHora() {
+    public String getHora() {
         return hora;
     }
 
-    public void setHora(Date hora) {
+    public void setHora(String hora) {
         this.hora = hora;
     }
 
-    public char getSituacao() {
+    public String getSituacao() {
         return situacao;
     }
 
-    public void setSituacao(char situacao) {
+    public void setSituacao(String situacao) {
         this.situacao = situacao;
     }
 
@@ -72,6 +75,14 @@ public class Agenda {
 
     public void setObservacoes(String observacoes) {
         this.observacoes = observacoes;
+    }
+    
+    public int getVacinaId() {
+        return vacina_id;
+    }
+
+    public void setVacinaId(int vacina_id) {
+        this.vacina_id = vacina_id;
     }
 
 }

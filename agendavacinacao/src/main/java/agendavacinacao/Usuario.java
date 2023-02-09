@@ -33,7 +33,7 @@ public class Usuario {
     private String cidade;
     
     @Column(name = "uf")
-    private char uf;
+    private String uf;
 
     public int getId() {
         return id;
@@ -99,11 +99,11 @@ public class Usuario {
         this.cidade = cidade;
     }
 
-    public char getUf() {
+    public String getUf() {
         return uf;
     }
 
-    public void setUf(char uf) {
+    public void setUf(String uf) {
         this.uf = uf;
     }
 
