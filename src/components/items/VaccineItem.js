@@ -39,8 +39,6 @@ const VaccineItem = ({ item }) => {
             </div>
         </div>
       </div>
-      <div className="item-content-footer">
-      </div>
     </div>
   );
 };
